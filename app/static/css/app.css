@@ -1,3 +1,37 @@
 body {
     padding-top: 5rem;
 }
+
+h1 {
+    border-bottom: 1px black solid;
+    padding-bottom: 10px;
+}
+
+p {
+    padding-top: 6px;
+}
+
+input ,textarea {
+    border-radius: 4px;
+    padding: 12px 12px;
+}
+
+button {
+    border-radius: 4px;
+    background-color: rgb(29, 128, 190);
+    color: white;
+    width: 100px;
+    border: none;
+    font-size: 16px;
+    padding: 10px 12px;
+}
+
+.flashes li {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.flashes {
+    display: table;
+    margin: 0 auto;
+}

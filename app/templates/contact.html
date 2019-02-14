@@ -1,0 +1,28 @@
+{% extends "base.html"%}
+
+{% block main %}
+
+<h1>Contact Form</h1>
+<p>Please fill out each field in the form below.</p>
+
+<form method = "POST" action = "/contact">
+
+    {{ contactform.csrf_token }}
+
+    {{ contactform.name.label }} <br>
+    {{ contactform.name(size = 40) }} <br><br>
+
+    {{ contactform.email.label }} <br>
+    {{ contactform.email(size = 40) }} <br><br>
+
+    {{ contactform.subject.label }} <br>
+    {{ contactform.subject(size = 40) }} <br><br>
+
+    {{ contactform.message.label }} <br>
+    {{ contactform.message(cols="40", rows= "5")}} <br><br>
+
+    <button type= "submit">Send</button>
+
+</form>
+
+{% endblock %}
